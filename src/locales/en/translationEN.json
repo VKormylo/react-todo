@@ -1,0 +1,25 @@
+{
+    "sidebar": {
+        "allTasks": "All tasks",
+        "addFolder": "Add folder",
+        "addForm": {
+            "placeholder": "Folder name",
+            "placeholderWarn": "Folder name is required",
+            "btn": "Add"
+        }
+    },
+    "tasks": {
+        "updateTitle": {
+            "confirm": "Confirm",
+            "cancel": "Cancel"
+        },
+        "addTask": "New task",
+        "addForm": {
+            "placeholder": "Task text",
+            "placeholderWarn": "Task text is required",
+            "add": "Add",
+            "close": "Close"
+        },
+        "empty": "There are no tasks"
+    }
+}

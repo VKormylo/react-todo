@@ -1,0 +1,25 @@
+{
+    "sidebar": {
+        "allTasks": "Усі завдання",
+        "addFolder": "Добавити папку",
+        "addForm": {
+            "placeholder": "Назва папки",
+            "placeholderWarn": "Назва папки є обов'язковою",
+            "btn": "Добавити"
+        }
+    },
+    "tasks": {
+        "updateTitle": {
+            "confirm": "Підтвердити",
+            "cancel": "Скасувати"
+        },
+        "addTask": "Нове завдання",
+        "addForm": {
+            "placeholder": "Текст завдання",
+            "placeholderWarn": "Текст завдання є обов'язковим",
+            "add": "Добавити завдання",
+            "close": "Скасувати"
+        },
+        "empty": "Завдань немає"
+    }
+}

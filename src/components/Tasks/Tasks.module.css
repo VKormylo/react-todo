@@ -1,0 +1,292 @@
+/* ------------------------------ */
+/* --- TO COMPONENT TASKS.JSX --- */
+/* ------------------------------ */
+
+.tasksInner {
+  margin-top: 60px;
+  padding: 0 40px;
+}
+
+.add {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  padding: 10px 0;
+  color: #8b8b8b;
+}
+
+.add img {
+  margin-right: 10px;
+  width: 14px;
+}
+
+.tasks {
+  border-top: 2px solid #f2f2f2;
+  padding-top: 30px;
+}
+
+.taskTitle {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.taskTitle input {
+  font-size: 22px;
+  height: 40px;
+  color: #c7c7c7;
+  border: 1px solid #c7c7c7;
+  padding: 0 10px;
+  border-radius: 4px;
+}
+
+.taskTitle img {
+  display: none;
+  cursor: pointer;
+  margin-left: 15px;
+  width: 15px;
+}
+
+.taskTitle:hover img {
+  display: block;
+}
+
+.titleBtns {
+  display: flex;
+}
+
+.title {
+  font-size: 32px;
+  max-width: 400px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.title.h1 {
+  color: #c9d1d3;
+}
+.title.h2 {
+  color: #42b883;
+}
+.title.h3 {
+  color: #64c4ed;
+}
+.title.h4 {
+  color: #ffbbcc;
+}
+.title.h5 {
+  color: #b6e6bd;
+}
+.title.h6 {
+  color: #c355f5;
+}
+.title.h7 {
+  color: #110133;
+}
+.title.h8 {
+  color: #ff6464;
+}
+
+.form {
+  display: none;
+  margin-top: 10px;
+}
+
+.form.visible {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.form input {
+  width: 100%;
+  height: 40px;
+  color: #c7c7c7;
+  border: 1px solid #c7c7c7;
+  padding: 0 10px;
+  border-radius: 4px;
+}
+
+.form input::placeholder {
+  color: #c7c7c7;
+}
+
+.form input.warn {
+  border-color: #ff6464;
+}
+
+.form input.warn::placeholder {
+  color: #ff6464;
+}
+
+.btns {
+  display: flex;
+  margin-top: 16px;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  background-color: #64c4ed;
+  font-size: 14px;
+  height: 36px;
+  border-radius: 4px;
+}
+
+.btn.add {
+  color: #fff;
+  width: 160px;
+}
+
+.btn.close {
+  width: 90px;
+  color: #9c9c9c;
+  background-color: #f4f6f8;
+  margin-left: 10px;
+}
+
+.btn.confirm {
+  width: 100px;
+  color: #fff;
+  background-color: #4dd599;
+  margin-left: 10px;
+}
+
+.allTasks {
+  margin-bottom: 40px;
+}
+
+/* ----------------------------- */
+/* --- TO COMPONENT TASK.JSX --- */
+/* ----------------------------- */
+
+.task {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  transition: all 0.3s;
+}
+
+.left {
+  display: flex;
+  align-items: center;
+}
+
+.doTask {
+  cursor: pointer;
+}
+
+.taskText {
+  display: inline-block;
+  max-width: 650px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.task img {
+  margin-right: 15px;
+}
+
+.task .deleteImg {
+  transition: all 5s;
+  display: none;
+  cursor: pointer;
+  width: 12px;
+}
+
+.task:hover .deleteImg {
+  display: block;
+}
+
+/* ---------- */
+/* RESPONSIVE */
+/* ---------- */
+
+@media (max-width: 1100px) {
+  .taskText {
+    max-width: 500px;
+  }
+}
+
+@media (max-width: 950px) {
+  .taskText {
+    max-width: 400px;
+    white-space: normal;
+    overflow: visible;
+    word-wrap: break-word;
+  }
+  .taskTitle input {
+    width: 250px;
+    font-size: 20px;
+    height: 40px;
+  }
+}
+
+@media (max-width: 850px) {
+  .taskText {
+    max-width: 300px;
+  }
+  .taskTitle input {
+    width: 200px;
+    font-size: 20px;
+    height: 40px;
+  }
+  .btn.close {
+    width: 80px;
+  }
+  
+  .btn.confirm {
+    width: 100px;
+  }
+  .title {
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 770px) {
+  .tasksInner {
+    width: 100%;
+    margin-top: 100px;
+  }
+  .taskText {
+    max-width: 200px;
+  }
+  .title {
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 600px) {
+  .editTitle {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .taskTitle input {
+    width: 100%;
+    font-size: 20px;
+    height: 40px;
+  }
+  .titleBtns {
+    margin-top: 10px;
+  }
+  .titleBtns .btn.confirm {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 450px) {
+  .tasksInner {
+    margin: 100px 0 0 0;
+    padding: 0 20px;
+  }
+  .title {
+    font-size: 24px;
+    max-width: 210px;
+  }
+}

@@ -1,0 +1,25 @@
+{
+    "sidebar": {
+        "allTasks": "Все задачи ",
+        "addFolder": "Добавить папку",
+        "addForm": {
+            "placeholder": "Название папки",
+            "placeholderWarn": "Название папки обязательно",
+            "btn": "Добавить"
+        }
+    },
+    "tasks": {
+        "updateTitle": {
+            "confirm": "Подтвердить",
+            "cancel": "Отмена"
+        },
+        "addTask": "Новая задача",
+        "addForm": {
+            "placeholder": "Текст задачи",
+            "placeholderWarn": "Текст задачи обязательно",
+            "add": "Добавить задачу",
+            "close": "Отмена"
+        },
+        "empty": "Задачи отсутствуют"
+    }
+}

@@ -1,44 +1,44 @@
 import * as axios from "axios";
 
-const instance = axios.create({
-  baseURL: "http://localhost:8080",
-});
+// const instance = axios.create({
+//   baseURL: "http://localhost:8080",
+// });
 
 export const appAPI = {
   getLists() {
-    return instance.get("/lists");
+    return axios.get("/lists");
   },
   getTasks() {
-    return instance.get("/tasks");
+    return axios.get("/tasks");
   },
   getColors() {
-    return instance.get("/colors");
+    return axios.get("/colors");
   },
   addList(name, colorId, id) {
-    return instance.post("/addlist", { name: name, colorId: colorId, id: id });
+    return axios.post("/addlist", { name: name, colorId: colorId, id: id });
   },
   deleteList(id) {
-    return instance.put("/deletelist", { id });
+    return axios.put("/deletelist", { id });
   },
   addTask(id, listId, text, done = false) {
-    return instance.post("/addtask", { id, listId, text, done });
+    return axios.post("/addtask", { id, listId, text, done });
   },
   deleteTask(id) {
-    return instance.put("/deletetask", { id });
+    return axios.put("/deletetask", { id });
   },
   doTask(id) {
-    return instance.put("/dotask", { id });
+    return axios.put("/dotask", { id });
   },
   updateTitle(id, name) {
-    return instance.put("/updatetitle", { id, name });
+    return axios.put("/updatetitle", { id, name });
   },
 };
 
 export const languageAPI = {
   getLanguage() {
-    return instance.get("/language");
+    return axios.get("/language");
   },
   changeLanguage(language) {
-    return instance.post("/language", {language});
+    return axios.post("/language", {language});
   },
 };
